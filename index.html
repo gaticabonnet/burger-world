@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./imagenes/logoburger.png">
+    <link rel="icon" href="./imagenes/logo.png">
+      <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>World-burger</title>
  </head>
  <body>
    <header>
-      <img class="logoConectarHeader" src="./imagenes/logoburger.png">
+      <img src="./imagenes/logo.png" alt="">
+
+
       <nav>
           <ul class="navBarHeader">
               <li>
@@ -39,11 +43,69 @@
           </ul>
 
       </nav>
-      <img class="adidasHeaderLogo" width="50" src="./imagenes/LOGO-ADIDAS-WEB.png" alt="">
+
       <i class="fa-solid fa-bars burgerMenu"></i>
   </header>
-  <section class="banner"></section>
-  <center><h2>Destacado</h2></center>
+  <main>
+    <section>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./imagenes/banner.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./imagenes/banner1.png" alt="">
+            </div>
+            <div class="swiper-slide"><img src="./imagenes/banner3.jpg" alt=""></div>
+            
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+          <div class="autoplay-progress">
+            <svg viewBox="0 0 48 48">
+              <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span></span>
+          </div>
+        </div>
+    </section>
+      <section class="banner"></section>
+        <h2>Destacado</h2>
+  </main>
+
 
  </body>
+
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+     const progressCircle = document.querySelector(".autoplay-progress svg");
+     const progressContent = document.querySelector(".autoplay-progress span");
+     var swiper = new Swiper(".mySwiper", {
+       spaceBetween: 30,
+       centeredSlides: true,
+       autoplay: {
+         delay: 2500,
+         disableOnInteraction: false
+       },
+       pagination: {
+         el: ".swiper-pagination",
+         clickable: true
+       },
+       navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev"
+       },
+       on: {
+         autoplayTimeLeft(s, time, progress) {
+           progressCircle.style.setProperty("--progress", 1 - progress);
+           progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+         }
+       }
+     });
+   </script>
  </html>

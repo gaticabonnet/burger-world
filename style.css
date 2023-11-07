@@ -1,5 +1,15 @@
+@import url(./swiper.css);
 body{
     background-color: rgb(236, 154, 0);
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: unset;
 }
 /*Header*/
 
@@ -12,7 +22,7 @@ header {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   }
   
-  .logoConectarHeader {
+  header img {
     width: 50px;
   }
   
