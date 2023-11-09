@@ -6,8 +6,9 @@
   box-sizing: border-box;
 }
 body{
-    background-color: rgb(236, 154, 0);
+
     font-family: Agbalumo;
+
 }
 
 ul{
@@ -22,8 +23,10 @@ a{
 
 header {
     background-color: white;
+
     color:rgb(236, 154, 0) ;
     display: flex;
+
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -71,6 +74,9 @@ header {
   padding: 32px;
   gap: 16px;
   flex-wrap: wrap;
+  background-image: url(./imagenes/cheddar.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .menu:hover .card{
