@@ -69,6 +69,8 @@ header {
 
 
 .menu{
+  display: flex;
+  justify-content: center;
   height: 500px;
   display: flex;
   padding: 32px;
