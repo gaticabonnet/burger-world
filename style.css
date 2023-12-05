@@ -109,6 +109,7 @@ header {
     color: white;
     display:flex;
     flex-direction:column;
+    justify-content: space-between;
   }
   
 
@@ -127,6 +128,9 @@ header {
   
   .card img{
     width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
   }
   
   .card h1 {
@@ -247,7 +251,7 @@ footer {
 
 
 /* comentarios */
-.container {
+.contacto .container {
   background-color: #ffffff;
   display: flex;
   width: 130px;
@@ -257,12 +261,12 @@ footer {
   transition: 0.3s ease-in-out;
 }
 
-.container:hover {
+.contacto .container:hover {
   transform: scale(1.03);
   width: 220px;
 }
 
-.container:hover .left-side {
+.contacto .container:hover .left-side {
   width: 100%;
 }
 
@@ -332,11 +336,11 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
-  .container {
+  .contacto .container {
     transform: scale(0.7);
   }
 
-  .container:hover {
+  .contacto .container:hover {
     transform: scale(0.74);
   }
 
@@ -356,11 +360,11 @@ footer {
   margin: 10px 0 0 -30px;
 }
 
-.container:hover .cardtransaction {
+.contacto .container:hover .cardtransaction {
   animation: slide-top 1.2s cubic-bezier(0.645, 0.045, 0.355, 1) both;
 }
 
-.container:hover .post {
+.contacto .container:hover .post {
   animation: slide-post 1s cubic-bezier(0.165, 0.84, 0.44, 1) both;
 }
 
@@ -420,7 +424,6 @@ footer {
 .screen {
   width: 47px;
   height: 23px;
-  background-color: #ffffff;
   position: absolute;
   top: 22px;
   right: 8px;
@@ -474,7 +477,7 @@ footer {
   text-align: center;
 }
 
-.container:hover .dollar {
+.contacto .container:hover .dollar {
   animation: fade-in-fwd 0.3s 1s backwards;
 }
 
