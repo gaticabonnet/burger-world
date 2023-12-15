@@ -23,9 +23,9 @@ a{
 /*Header*/
 
 header {
-    background-color: white;
+    background-color: rgb(223, 158, 80) ;
 
-    color:rgb(236, 154, 0) ;
+    color:white ;
     display: flex;
 
     justify-content: space-evenly;
@@ -50,7 +50,12 @@ header {
   .navSocialMediaHeader i {
     font-size: 20px;
   }
-  
+   button{
+
+   }
+   button a:hover{
+    color: rgb(255, 200, 0);
+   }
   
 
   
