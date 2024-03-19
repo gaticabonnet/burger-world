@@ -1,0 +1,62 @@
+@import url(./swiper.css);
+@import url(./footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+body {
+
+    font-family: Agbalumo;
+
+}
+
+header {
+    background-color: rgb(223, 158, 80);
+
+    color: white;
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+header img {
+    width: 50px;
+}
+
+header a:hover {
+    color: rgb(255, 200, 0);
+}
+
+.navBarHeader,
+.navSocialMediaHeader {
+    display: flex;
+    gap: 20px;
+}
+
+.navSocialMediaHeader i {
+    font-size: 20px;
+}
+
+button a:hover {
+    color: rgb(255, 200, 0);
+}
+
+
+
+
+.burgerMenu {
+    display: none;
+}
+
+.banner {
+    background-image: url("./imagenes/Grand-Tasty-1-e1627506211463.jpg");
+    width: 98, 9%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}

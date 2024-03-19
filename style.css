@@ -1,86 +1,92 @@
 @import url(./swiper.css);
+@import url(./footer);
+
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
 
-    font-family: Agbalumo;
+body {
+
+  font-family: Agbalumo;
 
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
   color: unset;
   cursor: pointer;
 }
+
 /*Header*/
 
 header {
-    background-color: rgb(223, 158, 80) ;
+  background-color: rgb(223, 158, 80);
 
-    color:white ;
-    display: flex;
+  color: white;
+  display: flex;
 
-    justify-content: space-evenly;
-    align-items: center;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  }
-  
-  header img {
-    width: 50px;
-  }
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
 
-  header a:hover{
-    color: rgb(255, 200, 0);
-  }
-  
-  .navBarHeader,
-  .navSocialMediaHeader {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .navSocialMediaHeader i {
-    font-size: 20px;
-  }
-   button{
+header img {
+  width: 50px;
+}
 
-   }
-   button a:hover{
-    color: rgb(255, 200, 0);
-   }
-  
+header a:hover {
+  color: rgb(255, 200, 0);
+}
 
-  
-  
-  .burgerMenu{
-    display: none;
-  }
-  .banner {
-    background-image: url("./imagenes/Grand-Tasty-1-e1627506211463.jpg");
-    width: 98,9%;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-  }
+.navBarHeader,
+.navSocialMediaHeader {
+  display: flex;
+  gap: 20px;
+}
 
-  /* carta */
+.navSocialMediaHeader i {
+  font-size: 20px;
+}
+
+button {}
+
+button a:hover {
+  color: rgb(255, 200, 0);
+}
 
 
 
-.menu{
+
+.burgerMenu {
+  display: none;
+}
+
+.banner {
+  background-image: url("./imagenes/Grand-Tasty-1-e1627506211463.jpg");
+  width: 98, 9%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+/* carta */
+
+
+
+.menu {
   display: flex;
   justify-content: center;
   height: 600px;
@@ -93,64 +99,64 @@ header {
   background-size: contain;
 }
 
-.menu:hover .card{
+.menu:hover .card {
   height: 500px;
   transform: skew(0deg);
 }
 
 .card {
-    width: 210px;
-    height: 120px;
-    padding: 0.5rem;
-    background: rgb(0, 0, 0);
-    border-radius: 8px;
-    backdrop-filter: blur(5px);
-    border-bottom: 3px solid rgba(255, 255, 255, 0.440);
-    border-left: 2px  rgba(255, 255, 255, 0.545) outset;
-    box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
-    transform: skewX(10deg);
-    transition: .4s;
-    overflow: hidden;
-    color: white;
-    display:flex;
-    flex-direction:column;
-    justify-content: space-between;
-  }
-  
+  width: 210px;
+  height: 120px;
+  padding: 0.5rem;
+  background: rgb(0, 0, 0);
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+  border-left: 2px rgba(255, 255, 255, 0.545) outset;
+  box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
+  transform: skewX(10deg);
+  transition: .4s;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-  
-  .align {
-    padding: 1rem;
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    align-self: flex-start;
 
-  }
-  
-  
 
-  
-  .card img{
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    object-position: center;
-  }
-  
-  .card h1 {
-    text-align: center;
-    margin: 1.3rem;
-    color: rgb(218, 244, 237);
-    text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
-  }
+.align {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-self: flex-start;
 
-  
+}
+
+
+
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card h1 {
+  text-align: center;
+  margin: 1.3rem;
+  color: rgb(218, 244, 237);
+  text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
+}
+
+
 
 
 /* Footer styles */
 footer {
-  background-color:  rgb(255, 170, 0);
+  background-color: rgb(255, 170, 0);
   color: rgb(255, 255, 255);
   text-align: center;
   display: flex;
@@ -164,8 +170,8 @@ footer {
   max-width: 1200px;
   display: grid;
   grid-template:
-      "gc   sep1    muni  sep2    contacto sep3    mapa" 200px /
-      1fr auto 1fr auto 1fr auto 1fr;
+    "gc   sep1    muni  sep2    contacto sep3    mapa" 200px /
+    1fr auto 1fr auto 1fr auto 1fr;
   padding: 12px 20px;
   gap: 20px;
   justify-content: center;
@@ -317,7 +323,7 @@ footer {
   margin-left: 20px;
 }
 
-.cardtransaction{
+.cardtransaction {
   width: 70px;
   height: 46px;
   background-color: #c7ffbc;
